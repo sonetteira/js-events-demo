@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/formManipulation.js" async></script>
+    <script src="assets/js/formValidation.js" async></script>
+</head>
+<body>
+    <h2>Contact Form</h2>
+
+    <form id="contact" name="contactForm" action="success.html" method="GET">
+        <label for="fname">First Name*</label>
+        <input id="fname" name="fname" type="text" required><br>
+        <label for="lname">Last Name*</label>
+        <input id="lname" name="lname" type="text" required><br>
+        <label for="email">Email*</label>
+        <input id="email" name="email" type="email" required><br>
+        <label for="outreach">How did you hear about us?</label>
+        <select id="outreach" name="outreach">
+            <option value="">---</option>
+            <option value="1">Word of Mouth</option>
+            <option value="2">Podcast</option>
+            <option value="3">YouTube Ad</option>
+            <option value="4">Other</option>
+        </select><br>
+        <label for="otherOutreach" class="hidden">Please specify other*</label>
+        <input id="otherOutreach" name="otherOutreach" type="text" class="hidden"><br>
+        <input type="submit" name="submit" value="Submit">
+        <p id="errs" class="error hidden"></p>
+    </form>
+
+</body>
+</html>

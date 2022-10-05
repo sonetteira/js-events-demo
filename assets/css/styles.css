@@ -1,0 +1,18 @@
+.secret {
+    visibility: hidden;
+}
+
+label, input, select {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
